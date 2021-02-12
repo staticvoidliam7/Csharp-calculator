@@ -22,9 +22,11 @@ using System.IO;
          }
          if (answer_calc == "2"){
            Squareroot();
+
          }
          if (answer_calc == "3"){
            Scientific_calc();
+           
          }
      }
      
@@ -42,8 +44,10 @@ using System.IO;
          b = Double.Parse(Console.ReadLine());
         if (a == 0 || b == 0){
           Console.WriteLine("Division By Zero is not possible");
+           Console.Read();
         }
         Console.WriteLine(a / b);
+         Console.Read();
       }
       else if (answer == "2"){
         Console.WriteLine("Enter 1st Value");
@@ -51,6 +55,7 @@ using System.IO;
         Console.WriteLine("Enter 2nd Value");
         b = Double.Parse(Console.ReadLine());
         Console.WriteLine(a * b);
+         Console.Read();
       }
       else if(answer=="3"){
         Console.WriteLine("Enter 1st Value");
@@ -58,6 +63,7 @@ using System.IO;
         Console.WriteLine("Enter 2nd Value");
         b = Double.Parse(Console.ReadLine());
         Console.WriteLine(a + b);
+         Console.Read();
       }
       else if (answer == "4"){
           Console.WriteLine("Enter 1st Value");
@@ -65,9 +71,11 @@ using System.IO;
         Console.WriteLine("Enter 2nd Value");
         b = Double.Parse(Console.ReadLine());
         Console.WriteLine(a - b);
+         Console.Read();
       }
       else{
         Console.WriteLine("Invalid Input");
+         Console.Read();
       }
     }
    
@@ -98,19 +106,21 @@ using System.IO;
          a = Double.Parse(Console.ReadLine());
          converted_value = a * 0.94;
          Console.WriteLine("Your Value Is " + converted_value);
-
+         Console.Read();
        }
        else if (useranswerconvert == "2"){
           Console.WriteLine("Enter A Value To Convert"); 
          a = Double.Parse(Console.ReadLine());
          converted_value = a * 0.79;
          Console.WriteLine("Your Value Is " +  converted_value);
+          Console.Read();
        }
        else if (useranswerconvert == "3"){
          Console.WriteLine("Enter A Value To Convert"); 
          a = Double.Parse(Console.ReadLine());
          converted_value = a * 113;
          Console.WriteLine("Your Value Is " + converted_value);
+          Console.Read();
 
        }
        else if (useranswerconvert == "4"){
@@ -118,6 +128,7 @@ using System.IO;
          a = Double.Parse(Console.ReadLine());
          converted_value = a * 1.33;
          Console.WriteLine("Your Value Is " + converted_value);
+          Console.Read();
        }
      }
    }
