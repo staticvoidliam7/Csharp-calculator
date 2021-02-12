@@ -79,6 +79,7 @@ using System.IO;
         }
         else{
           Console.WriteLine("Square Root of " + sqrt + " is " + Math.Sqrt(sqrt));
+          Console.Read();
         }
       }
      public static void converter(){
